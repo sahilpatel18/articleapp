@@ -19,6 +19,9 @@ router.get('/', async (req,res) => {
   res.render('index',{articles: articles})
 })
 
+router.get('/hello', (req,res,next) => {
+  res.send('Hello World')
+})
 
 
 router.get('/logout',(req,res,next) => {
