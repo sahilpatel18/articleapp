@@ -21,7 +21,7 @@ router.post("/add-article", (req, res) => {
     description,
     userId,
   ]).then(() => {
-    res.send("SUCCESS");
+    res.redirect('/users/articles')
   });
 });
 
